@@ -1,0 +1,35 @@
+<div class="container bg-info">
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-10">
+            <label for="nombreProducto"class="text-light">Nombre</label>
+            <input type="text" class="form-control" id="nombreProducto" placeholder="Ingrese nombre del producto">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="tipoProducto" class="text-light">Tipo de Producto</label>
+            <select class="custom-select" id="tipoProducto" required>
+                <option selected disabled value="">Escoge una opción...</option>
+                <option>Resina</option>
+                <option>Aditamento</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="cantidad" class="text-light">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="unidad" class="text-light">Unidad</label>
+            <select class="custom-select" id="unidad" required>
+              <option selected disabled value="">Escoge una opción...</option>
+              <option>Kg</option>
+              <option>Lt</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Guardar producto</button>
+      </form>
+</div>
